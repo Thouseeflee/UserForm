@@ -43,11 +43,11 @@ function Login() {
         <form onSubmit={handleSubmit}>
             <div className="my-1">
                 <label htmlFor="email">Email</label>
-                <input type="email" name="email" onChange={(e) => setName(e.target.value)} value={name} id="email" placeholder="Enter Your Email id" />
+                <input type="email" name="email" onChange={(e) => setName(e.target.value)} value={name} id="email" placeholder="Enter Your Email id" required />
             </div>
             <div className="my-1">
                 <label htmlFor="password">Password</label>
-                <input type="password" name="pass" onChange={(e) => setEmail(e.target.value)} value={email} id="password"/>
+                <input type="password" name="pass" onChange={(e) => setEmail(e.target.value)} value={email} id="password" required />
             </div>
             <button className="btn btn-success" type="sumbit">Submit</button>
         </form>
